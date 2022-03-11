@@ -80,7 +80,7 @@
         <section id="answer" class="container mt-3">
             <div>
                 <h2>1. How does javascript work?</h2>
-                <p><span class="fs-2 fw-bold">B</span>rowser যখন কোন javascript code পায় সে সেগুলোকে v8 engine এর কাছে পাঠায়। v8 engine source code গুলো নিয়ে parse করে abstract syntax tree তৈরি করে। এবং just in time compiler কোড গুলকে machine code এ convert করে, তারপর code গুলো run হয়। এবং আমরা output দেখতে পাই।</p>
+                <p>Browser যখন কোন javascript code পায় সে সেগুলোকে v8 engine এর কাছে পাঠায়। v8 engine source code গুলো নিয়ে parse করে abstract syntax tree তৈরি করে। এবং just in time compiler কোড গুলকে machine code এ convert করে, তারপর code গুলো run হয়। এবং আমরা output দেখতে পাই।</p>
             </div>
             <div class="my-4">
                 <h2>2. What are the difference between localstorage and sessionstorage?</h2>
@@ -103,7 +103,7 @@
             </div>
             <div class="my-4">
                 <h2>3. What does javascript event loop do ?</h2>
-                <p><span class="fs-2 fw-bold">J</span>avascript একটি single thread programming language. call stack line by line কোড চেক করে এবং ফাংশন গুলকে call stack এ যোগ করে। যখন কোন ফাংশন এর কাজ শেষ হয় সেটা stack থেকে remove হয়ে যায়। যদি asynchronus ফাংশন হয় তাহলে সেটাকে call stack থেকে web api এ প্রক্রিয়াকরণের জন্য পাঠানো হয় এবং call stack অন্য ফাংশন নিয়ে কাজ করতে থাকে। web api এ কাজটি ফেরত পাঠানোর জন্য নির্দিষ্ট সময় পর্যন্ত অপেক্ষা করে। তারপর সেটা event queue তে জমা হয় এবং event loop ক্রমাগত দেখে call stack খালি কিনা। খালি থাকলে, event queue থেকে একটা করে ফাংশন call stack যোগ করে। যদি এটি না হয়, তাহলে বর্তমান ফাংশন কল প্রক্রিয়া চলতে থাকে।</p>
+                <p>Javascript একটি single thread programming language. call stack line by line কোড চেক করে এবং ফাংশন গুলকে call stack এ যোগ করে। যখন কোন ফাংশন এর কাজ শেষ হয় সেটা stack থেকে remove হয়ে যায়। যদি asynchronus ফাংশন হয় তাহলে সেটাকে call stack থেকে web api এ প্রক্রিয়াকরণের জন্য পাঠানো হয় এবং call stack অন্য ফাংশন নিয়ে কাজ করতে থাকে। web api এ কাজটি ফেরত পাঠানোর জন্য নির্দিষ্ট সময় পর্যন্ত অপেক্ষা করে। তারপর সেটা event queue তে জমা হয় এবং event loop ক্রমাগত দেখে call stack খালি কিনা। খালি থাকলে, event queue থেকে একটা করে ফাংশন call stack যোগ করে। যদি এটি না হয়, তাহলে বর্তমান ফাংশন কল প্রক্রিয়া চলতে থাকে।</p>
             </div>
         </section>
         <footer></footer>
